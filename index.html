@@ -3,26 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pac Man</title>
+    <title>Pac-Man</title>
     <link rel="stylesheet" href="pacman.css">
-    <script> scr="pacman.js"</script>
-
+    <script src="pacman.js" defer></script>
 </head>
 <body>
-    <canvas id ="board"></canvas>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pac Man</title>
-    <link rel="stylesheet" href="pacman.css">
-    <script> scr="pacman.js"</script>
+    <div class="scoreboard">
+        <span>Score: <span id="score">0</span></span>
+        <span>Lives: <span id="lives">3</span></span>
+    </div>
 
-</head>
-<body>
-    <canvas id ="board"></canvas>
+    <canvas id="board"></canvas>
+
+    <p id="message">Eat</p>
+    <button id="restart">Restart Game</button>
+
 </body>
 </html>
